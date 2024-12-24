@@ -4,6 +4,7 @@ Simple Discord Toolbox iOS APP! (Still WIP!)
 
 ## Features
 
+- User Friendly Discord-style UI
 - Send Message using your Bot!
 - Storage for Channel ID , Token , Messages , Server ID
 - Simple Memo for Storage
