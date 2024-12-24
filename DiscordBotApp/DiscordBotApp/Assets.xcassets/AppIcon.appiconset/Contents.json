@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "Discord_App_icon_with_modern_gradient_glow_style-1735024437055.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
