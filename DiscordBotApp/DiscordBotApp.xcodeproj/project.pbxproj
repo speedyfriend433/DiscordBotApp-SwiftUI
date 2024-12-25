@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		8E3C91F12D1AA5F600A7C995 /* ServerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C91F02D1AA5F600A7C995 /* ServerModels.swift */; };
 		8E3C91F32D1AA62900A7C995 /* ServerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C91F22D1AA62900A7C995 /* ServerInfoView.swift */; };
+		8E4FCABE2D1BFD7300216F36 /* CommandModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCABD2D1BFD7300216F36 /* CommandModels.swift */; };
+		8E4FCAC02D1BFD8900216F36 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCABF2D1BFD8900216F36 /* CommandManager.swift */; };
+		8E4FCAC22D1BFDA500216F36 /* CommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCAC12D1BFDA500216F36 /* CommandsView.swift */; };
+		8E4FCAC42D1BFDBB00216F36 /* CommandEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCAC32D1BFDBB00216F36 /* CommandEditView.swift */; };
+		8E4FCAC62D1BFDD600216F36 /* ParameterEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCAC52D1BFDD600216F36 /* ParameterEditView.swift */; };
+		8E4FCAC82D1BFDEA00216F36 /* CommandExecuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCAC72D1BFDEA00216F36 /* CommandExecuteView.swift */; };
+		8E4FCACC2D1C026A00216F36 /* AutoResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCACB2D1C026A00216F36 /* AutoResponseModels.swift */; };
+		8E4FCACE2D1C027B00216F36 /* AutoResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCACD2D1C027B00216F36 /* AutoResponseManager.swift */; };
+		8E4FCAD02D1C029800216F36 /* AutoResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCACF2D1C029800216F36 /* AutoResponseView.swift */; };
+		8E4FCAD22D1C02C100216F36 /* AutoResponseEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4FCAD12D1C02C100216F36 /* AutoResponseEditView.swift */; };
 		8E7D9FE12D19BAE900FDFEC5 /* DiscordBotAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D9FE02D19BAE900FDFEC5 /* DiscordBotAppApp.swift */; };
 		8E7D9FE32D19BAE900FDFEC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D9FE22D19BAE900FDFEC5 /* ContentView.swift */; };
 		8E7D9FE52D19BAEB00FDFEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D9FE42D19BAEB00FDFEC5 /* Assets.xcassets */; };
@@ -55,6 +65,16 @@
 /* Begin PBXFileReference section */
 		8E3C91F02D1AA5F600A7C995 /* ServerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModels.swift; sourceTree = "<group>"; };
 		8E3C91F22D1AA62900A7C995 /* ServerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerInfoView.swift; sourceTree = "<group>"; };
+		8E4FCABD2D1BFD7300216F36 /* CommandModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModels.swift; sourceTree = "<group>"; };
+		8E4FCABF2D1BFD8900216F36 /* CommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
+		8E4FCAC12D1BFDA500216F36 /* CommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsView.swift; sourceTree = "<group>"; };
+		8E4FCAC32D1BFDBB00216F36 /* CommandEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandEditView.swift; sourceTree = "<group>"; };
+		8E4FCAC52D1BFDD600216F36 /* ParameterEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEditView.swift; sourceTree = "<group>"; };
+		8E4FCAC72D1BFDEA00216F36 /* CommandExecuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandExecuteView.swift; sourceTree = "<group>"; };
+		8E4FCACB2D1C026A00216F36 /* AutoResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResponseModels.swift; sourceTree = "<group>"; };
+		8E4FCACD2D1C027B00216F36 /* AutoResponseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResponseManager.swift; sourceTree = "<group>"; };
+		8E4FCACF2D1C029800216F36 /* AutoResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResponseView.swift; sourceTree = "<group>"; };
+		8E4FCAD12D1C02C100216F36 /* AutoResponseEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResponseEditView.swift; sourceTree = "<group>"; };
 		8E7D9FDD2D19BAE900FDFEC5 /* DiscordBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscordBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D9FE02D19BAE900FDFEC5 /* DiscordBotAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiscordBotAppApp.swift; path = "../New Group/DiscordBotAppApp.swift"; sourceTree = "<group>"; };
 		8E7D9FE22D19BAE900FDFEC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +204,8 @@
 				8E7DA0132D19BB6400FDFEC5 /* BotSettings.swift */,
 				8E7DA02E2D19C4AF00FDFEC5 /* StorageItem.swift */,
 				8E3C91F02D1AA5F600A7C995 /* ServerModels.swift */,
+				8E4FCABD2D1BFD7300216F36 /* CommandModels.swift */,
+				8E4FCACB2D1C026A00216F36 /* AutoResponseModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +230,12 @@
 				8E7DA0242D19BD3300FDFEC5 /* SettingsView.swift */,
 				8E7DA02A2D19C47800FDFEC5 /* StorageView.swift */,
 				8E3C91F22D1AA62900A7C995 /* ServerInfoView.swift */,
+				8E4FCAC12D1BFDA500216F36 /* CommandsView.swift */,
+				8E4FCAC32D1BFDBB00216F36 /* CommandEditView.swift */,
+				8E4FCAC52D1BFDD600216F36 /* ParameterEditView.swift */,
+				8E4FCAC72D1BFDEA00216F36 /* CommandExecuteView.swift */,
+				8E4FCACF2D1C029800216F36 /* AutoResponseView.swift */,
+				8E4FCAD12D1C02C100216F36 /* AutoResponseEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				8E7DA0202D19BBE900FDFEC5 /* KeychainManager.swift */,
+				8E4FCACD2D1C027B00216F36 /* AutoResponseManager.swift */,
+				8E4FCABF2D1BFD8900216F36 /* CommandManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -366,22 +396,32 @@
 				8E7DA01C2D19BBC000FDFEC5 /* BotControlView.swift in Sources */,
 				8E7D9FE32D19BAE900FDFEC5 /* ContentView.swift in Sources */,
 				8E7DA0102D19BB4500FDFEC5 /* DiscordMessage.swift in Sources */,
+				8E4FCAC02D1BFD8900216F36 /* CommandManager.swift in Sources */,
 				8E3C91F12D1AA5F600A7C995 /* ServerModels.swift in Sources */,
 				8E7DA01F2D19BBDB00FDFEC5 /* LoadingView.swift in Sources */,
 				8E3C91F32D1AA62900A7C995 /* ServerInfoView.swift in Sources */,
 				8E7D9FE12D19BAE900FDFEC5 /* DiscordBotAppApp.swift in Sources */,
 				8E7DA0162D19BB7400FDFEC5 /* DiscordAPI.swift in Sources */,
+				8E4FCAC22D1BFDA500216F36 /* CommandsView.swift in Sources */,
 				8E7DA02F2D19C4AF00FDFEC5 /* StorageItem.swift in Sources */,
+				8E4FCACC2D1C026A00216F36 /* AutoResponseModels.swift in Sources */,
 				8E7DA0212D19BBE900FDFEC5 /* KeychainManager.swift in Sources */,
 				8E7DA0142D19BB6400FDFEC5 /* BotSettings.swift in Sources */,
+				8E4FCAC42D1BFDBB00216F36 /* CommandEditView.swift in Sources */,
 				8E7DA0122D19BB5500FDFEC5 /* DiscordError.swift in Sources */,
+				8E4FCAC82D1BFDEA00216F36 /* CommandExecuteView.swift in Sources */,
+				8E4FCAC62D1BFDD600216F36 /* ParameterEditView.swift in Sources */,
 				8E7DA0332D19C93600FDFEC5 /* GlowButton.swift in Sources */,
+				8E4FCACE2D1C027B00216F36 /* AutoResponseManager.swift in Sources */,
 				8E7DA01A2D19BB9D00FDFEC5 /* RateLimiter.swift in Sources */,
+				8E4FCABE2D1BFD7300216F36 /* CommandModels.swift in Sources */,
 				8E7DA0182D19BB8500FDFEC5 /* WebSocketManager.swift in Sources */,
+				8E4FCAD02D1C029800216F36 /* AutoResponseView.swift in Sources */,
 				8E7DA02B2D19C47800FDFEC5 /* StorageView.swift in Sources */,
 				8E7DA0252D19BD3300FDFEC5 /* SettingsView.swift in Sources */,
 				8E7DA0272D19C1D500FDFEC5 /* Theme.swift in Sources */,
 				8E7DA0312D19C58B00FDFEC5 /* SectionHeader.swift in Sources */,
+				8E4FCAD22D1C02C100216F36 /* AutoResponseEditView.swift in Sources */,
 				8E7DA0292D19C1E600FDFEC5 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

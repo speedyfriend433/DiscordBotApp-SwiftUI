@@ -16,8 +16,6 @@ struct ServerInfo: Codable, Identifiable {
     let presenceCount: Int?
     let channels: [ChannelInfo]?
     let roles: [RoleInfo]?
-    let features: [String]?
-    let ownerId: String?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -28,8 +26,6 @@ struct ServerInfo: Codable, Identifiable {
         case presenceCount = "approximate_presence_count"
         case channels
         case roles
-        case features
-        case ownerId = "owner_id"
     }
 }
 

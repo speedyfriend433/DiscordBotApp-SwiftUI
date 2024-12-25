@@ -15,12 +15,17 @@ struct BotControlView: View {
     @State private var successMessage: String?
     @ObservedObject var settings: BotSettings
     @ObservedObject var storageManager: StorageManager
+    @ObservedObject var autoResponseManager: AutoResponseManager
     private let discordAPI: DiscordAPI
     
-    init(settings: BotSettings, storageManager: StorageManager) {
+    init(settings: BotSettings, storageManager: StorageManager, autoResponseManager: AutoResponseManager) {
         self.settings = settings
         self.storageManager = storageManager
-        self.discordAPI = DiscordAPI(botToken: settings.botToken)
+        self.autoResponseManager = autoResponseManager
+        self.discordAPI = DiscordAPI(
+            botToken: settings.botToken,
+            autoResponseManager: autoResponseManager
+        )
     }
     
     var body: some View {
@@ -206,9 +211,9 @@ struct BotControlView_Previews: PreviewProvider {
     static var previews: some View {
         BotControlView(
             settings: BotSettings.default,
-            storageManager: StorageManager()
+            storageManager: StorageManager(),
+            autoResponseManager: AutoResponseManager()
         )
     }
 }
 #endif
-    

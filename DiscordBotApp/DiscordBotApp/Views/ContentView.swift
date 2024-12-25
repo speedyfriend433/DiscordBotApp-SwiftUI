@@ -10,17 +10,33 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var settings = BotSettings.default
     @StateObject private var storageManager = StorageManager()
+    @StateObject private var commandManager = CommandManager()
+    @StateObject private var autoResponseManager = AutoResponseManager()
     
     var body: some View {
         TabView {
-            BotControlView(settings: settings, storageManager: storageManager)
-                .tabItem {
-                    Label("Bot Control", systemImage: "message")
-                }
+            BotControlView(
+                settings: settings,
+                storageManager: storageManager,
+                autoResponseManager: autoResponseManager
+            )
+            .tabItem {
+                Label("Bot Control", systemImage: "message")
+            }
             
-            StorageView(storageManager: storageManager)  // Pass storageManager here
+            StorageView(storageManager: storageManager)
                 .tabItem {
                     Label("Storage", systemImage: "archivebox")
+                }
+            
+            CommandsView(commandManager: commandManager)
+                .tabItem {
+                    Label("Commands", systemImage: "terminal")
+                }
+            
+            AutoResponseView(autoResponseManager: autoResponseManager)
+                .tabItem {
+                    Label("Auto Reply", systemImage: "bubble.left.and.bubble.right")
                 }
             
             ServerInfoView(settings: settings, storageManager: storageManager)
@@ -33,35 +49,31 @@ struct ContentView: View {
                     Label("Settings", systemImage: "gear")
                 }
         }
+        .onAppear {
 
-                    .background(Theme.primaryBackground)
-                        .onAppear {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor(Theme.primaryBackground)
+            
+            UITabBar.appearance().standardAppearance = appearance
+            if #available(iOS 15.0, *) {
+                UITabBar.appearance().scrollEdgeAppearance = appearance
+            }
+        }
+    }
+}
 
-                            let appearance = UITabBarAppearance()
-                            appearance.configureWithOpaqueBackground()
-                            appearance.backgroundColor = UIColor(Theme.primaryBackground)
-                            
-                            UITabBar.appearance().standardAppearance = appearance
-                            if #available(iOS 15.0, *) {
-                                UITabBar.appearance().scrollEdgeAppearance = appearance
-                            }
-                        }
-                    }
-                }
-
-#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-#endif
 
 // MARK: - TabView Padding Reminder
 
 /* .background(Theme.primaryBackground)
  .onAppear {
-     // Set the tab bar background color
+
      let appearance = UITabBarAppearance()
      appearance.configureWithOpaqueBackground()
      appearance.backgroundColor = UIColor(Theme.primaryBackground)

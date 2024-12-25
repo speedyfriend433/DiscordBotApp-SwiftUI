@@ -97,7 +97,7 @@ struct ServerInfoView: View {
         Task {
             do {
                 serverInfo = try await discordAPI.getServerInfo(serverId: serverId)
-                // Add server name as label if available
+
                 if let name = serverInfo?.name {
                     storageManager.updateLabel(for: serverId, type: .serverId, label: name)
                 }

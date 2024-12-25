@@ -169,7 +169,7 @@ struct StorageItemView: View {
             Spacer()
             
             HStack(spacing: 12) {
-                // Memo Button
+
                 Button(action: { showingMemoSheet = true }) {
                     Image(systemName: item.memo == nil ? "square.and.pencil" : "note.text")
                         .foregroundColor(Theme.textSecondary)
