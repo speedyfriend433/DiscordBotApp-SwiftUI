@@ -12,6 +12,8 @@ Simple Discord Toolbox iOS APP! (Still WIP!)
 - Server Info (Requires Server ID from the server , need to be enabled for Developer Mode)
 - Bot Settings (Token , Default Channel ID , Command Prefix)
 
+** You gotta need to replace "Your Discord Token Key" with 'Your Bot' token
+
 ## Requirements
 
 - iOS 15.0+ (iOS 15+ functions were used)
@@ -61,5 +63,5 @@ speedyfriend67 - speedyfriend433@gmail.com
  - Webhook integration []
  - Command templates []
  - Scheduled messages  []
- - Auto-responses []
- - Custom command creation []
+ - Auto-responses [x]
+ - Custom command creation [x]
