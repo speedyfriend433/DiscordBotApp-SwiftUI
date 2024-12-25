@@ -12,7 +12,7 @@ Simple Discord Toolbox iOS APP! (Still WIP!)
 - Server Info (Requires Server ID from the server , need to be enabled for Developer Mode)
 - Bot Settings (Token , Default Channel ID , Command Prefix)
 
-** You gotta need to replace "Your Discord Token Key" with 'Your Bot' token
+** You gotta need to replace "Your Discord Token Key" with 'Your Bot' token **
 
 ## Requirements
 
